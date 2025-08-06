@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nursa Store</title>
+  <style>
+    :root {
+      --primary: #f53d2d;
+      --gray: #f5f5f5;
+      --text-dark: #333;
+      --text-light: #666;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: var(--gray);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 30px;
+    }
+
+    .logo span {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .cart {
+      position: relative;
+    }
+
+    .cart img {
+      width: 26px;
+    }
+
+    .cart::after {
+      content: "0";
+      position: absolute;
+      top: -6px;
+      right: -8px;
+      background: white;
+      color: var(--primary);
+      border-radius: 50%;
+      font-size: 12px;
+      width: 18px;
+      height: 18px;
+      text-align: center;
+      line-height: 18px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      background: #fff;
+      padding: 10px;
+    }
+
+    .product-info {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--text-dark);
+      margin-bottom: 5px;
+    }
+
+    .price {
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .button {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 8px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg" alt="Logo">
+      <span>Nursa Store</span>
+    </div>
+    <div class="cart">
+      <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Keranjang">
+    </div>
+  </header>
+  <div class="container">
+    <div class="grid">
+
+      <div class="product">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg" alt="Netflix">
+        <div class="product-info">
+          <div class="product-title">Netflix Private (1P1U) - 1 Bulan</div>
+          <div class="price">Rp35.000</div>
+          <a class="button" href="https://wa.me/6287828212888" target="_blank">Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://upload.wikimedia.org/wikipedia/id/3/36/CapCut_logo.png" alt="CapCut">
+        <div class="product-info">
+          <div class="product-title">CapCut Pro - 1 Bulan</div>
+          <div class="price">Rp35.000</div>
+          <a class="button" href="https://wa.me/6287828212888" target="_blank">Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/bb/Canva_Logo.svg" alt="Canva">
+        <div class="product-info">
+          <div class="product-title">Canva Pro - 1 Bulan</div>
+          <div class="price">Rp10.000</div>
+          <a class="button" href="https://wa.me/6287828212888" target="_blank">Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Viu_logo.svg" alt="Viu">
+        <div class="product-info">
+          <div class="product-title">Viu Premium - 1 Bulan</div>
+          <div class="price">Rp35.000</div>
+          <a class="button" href="https://wa.me/6287828212888" target="_blank">Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/RCTI_logo_2015.svg" alt="RCTI+">
+        <div class="product-info">
+          <div class="product-title">RCTI+ Premium - 1 Bulan</div>
+          <div class="price">Rp35.000</div>
+          <a class="button" href="https://wa.me/6287828212888" target="_blank">Pesan Sekarang</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Nursa Store. All rights reserved.
+  </footer>
+</body>
+</html>
